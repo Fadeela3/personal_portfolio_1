@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 export function HomePage() {
   return (
     <div className="pt-24 pb-12 max-w-5xl mx-auto px-4 text-center">
@@ -7,11 +8,14 @@ export function HomePage() {
           I build scalable full-stack applications
         </h1>
         <p className="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base mb-6">
-          Computer Science Graduate specializing in React, Node.js, and C/Systems Development.
+          Computer Science Graduate specializing in React, Node.js, and C/Systems Development. Focused on clean architecture and high-performance applications.
         </p>
-        <button className="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-lg font-medium transition-all shadow-lg shadow-blue-500/20">
+        <Link 
+            to="/projects" 
+            className="inline-block bg-blue-900 hover:bg-blue-500 text-white px-5 py-2.5 rounded-lg font-medium transition-all shadow-lg shadow-blue-500/20"
+          >
           View Projects
-        </button>
+        </Link>
       </div>
     </div>
   );
