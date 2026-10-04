@@ -5,6 +5,7 @@ export const projectsData: Project[] = [
     {
         id: 'random-animal-drawing-website',
         title: 'Random Animal Drawing Website',
+        date: '2026-05',
         shortDescription: 'Full-stack creative drawing board capturing user sketches inspired by dynamic animal API prompts.',
         longDescription:
             'A full-stack web application featuring an interactive Canvas API drawing board with customizable brushes, color selectors, and layer support. Built with a responsive React frontend and a Node.js/MongoDB backend to let users create, save, and browse community drawings.',
@@ -120,5 +121,21 @@ export const projectsData: Project[] = [
             'Styled interface with FantaCSS utility classes and deployed live on Netlify for public access'
         ]
     },
+    {
+        id: 'bake-build-tool',
+        title: 'Bake Build System',
+        shortDescription: 'Custom C build tool similar to GNU Make, parsing bakefiles to build dependency DAGs and execute rules.',
+        longDescription:
+            'A low-level build automation tool written in C that functions similarly to GNU Make. Designed to parse custom bakefiles, construct directed acyclic dependency graphs (DAGs), and execute targeted compilations based on file modification timestamps.',
+        featured: true,
+        category: ['Systems'],
+        tags: ['C', 'Systems Programming', 'Build Systems', 'DAG', 'POSIX', 'GNU Make'],
+        imageUrl: '',
+        highlights: [
+            'Engineered a C-based build system similar to Make that parses bakefiles and evaluates rule dependency trees',
+            'Constructed directed acyclic graphs (DAGs) to model rule relationships and determine execution order',
+            'Implemented target timestamp comparison logic to detect file changes, skipping up-to-date targets and optimizing re-compilation'
+        ]
+    }
 
 ]

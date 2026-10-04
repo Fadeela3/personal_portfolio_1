@@ -27,6 +27,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
               <span>$</span>
               <span className="text-slate-200">{project.id} --status</span>
             </p>
+            {project.date && (
+              <p className="text-slate-500 truncate pl-3">
+                [info] date: {project.date}
+              </p>
+            )}
             <p className="text-slate-500 truncate pl-3">
               [info] categories: {project.category.join(', ')}
             </p>

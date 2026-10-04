@@ -9,6 +9,7 @@ export type ProjectCategory =
 export interface Project {
     id: string; // slug (url readble name ex. animal-drawing-app or bake-build)
     title: string;
+    date?: string; // format: YYYY-MM
     shortDescription: string;
     longDescription: string;
     featured: boolean; // featured projects show up on the home page
