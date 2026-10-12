@@ -96,7 +96,7 @@ export const projectsData: Project[] = [
             'A Python implementation of the mathematical game of strategy Nim. Designed with customizable initial board configurations and flexible match setups across human players, random-move agents, and an intelligent agent powered by Minimax with Alpha-Beta Pruning to calculate optimal move decisions.',
         featured: false,
         category: ['ML/AI'],
-        tags: ['Python', 'AI', 'Alpha-Beta Pruning', 'Minimax', 'Game Theory', 'Algorithms'],
+        tags: ['Python', 'Alpha-Beta Pruning', 'Minimax', 'Game Theory', 'Algorithms'],
         imageUrl: '',
         highlights: [
             'Engineered customizable initial game configurations and player types (human vs. human, random agent, or Alpha-Beta AI agent)',
