@@ -4,11 +4,13 @@ import { SpaceBackground } from './components/SpaceBackground';
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
 import { ProjectsPage } from './pages/ProjectsPage';
+import { ScrollToTop } from './components/ScrollToTop';
 
 export function App() {
   return (
     <BrowserRouter>
       <div className="relative min-h-screen text-slate-100 bg-slate-950">
+        <ScrollToTop />
         <SpaceBackground />
         <Navbar />
         <main className="relative z-10 min-h-screen">
