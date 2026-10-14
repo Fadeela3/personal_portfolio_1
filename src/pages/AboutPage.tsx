@@ -64,7 +64,7 @@ export function AboutPage() {
 
 
   return (
-    <div className="relative z-10 max-w-6xl mx-auto px-4 py-12 text-slate-100">
+    <div className="relative z-10 pt-28 max-w-6xl mx-auto px-4 py-12 text-slate-100">
       
       {/* Page Title */}
       <div className="text-center max-w-2xl mx-auto mb-10">
