@@ -158,7 +158,7 @@ export function AboutPage() {
           Milestones &amp; Journey
         </h2>
 
-        <div className="relative max-w-3xl mx-auto before:absolute before:inset-0 before:left-1/2 before:-translate-x-1/2 before:w-0.5 before:bg-slate-800">
+        <div className="relative max-w-3xl mx-auto before:absolute before:inset-0 before:left-6 md:before:left-1/2 before:-translate-x-1/2 before:w-0.5 before:bg-slate-800">
           {timelineEvents.map((event, idx) => (
             <div
               key={idx}
@@ -167,14 +167,14 @@ export function AboutPage() {
               }`}
             >
               {/* Event Marker (Circle + Star) */}
-              <div className="flex items-center justify-center w-7 h-7 rounded-full bg-slate-900 border border-blue-500/80 text-blue-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+              <div className="absolute left-6 md:left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-7 h-7 rounded-full bg-slate-900 border border-blue-500/80 text-blue-400 shadow shrink-0 z-10">
                 <svg className="w-3.5 h-3.5 text-blue-400 fill-current" viewBox="0 0 24 24">
                   <path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.2-6.3-4.6-6.3 4.6 2.3-7.2-6-4.6h7.6z" />
                 </svg>
               </div>
 
               {/* Event Content Card */}
-              <div className="w-[calc(100%-2.5rem)] md:w-[calc(50%-2.5rem)] bg-slate-900/60 border border-slate-800 p-4 rounded-xl shadow-md">
+              <div className="w-[calc(100%-3rem)] ml-auto md:ml-0 md:w-[calc(50%-2.5rem)] bg-slate-900/60 border border-slate-800 p-4 rounded-xl shadow-md">
                 <span className="text-xs font-semibold text-blue-400">{event.date}</span>
                 <h3 className="text-sm font-bold text-slate-100 mt-0.5 mb-1">{event.title}</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">{event.description}</p>
